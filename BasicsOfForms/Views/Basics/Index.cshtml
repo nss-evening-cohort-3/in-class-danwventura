@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div class="row">
+    <div class="col-lg-4">
+        <form method="post" action="/Basics/Index">
+            @Html.AntiForgeryToken()
+            <label>Enter Email:</label>
+            <input type="email" name="email"/>
+            <label>Enter Password:</label>
+            <input type="password" name="password"/>
+            <label>Re-Enter Password:</label>
+            <input type="password" name="passwordverification" />
+            <input type="submit" value="SUBMIT" />
+        </form>
+    </div>
+</div>

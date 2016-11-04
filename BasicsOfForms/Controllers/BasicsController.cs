@@ -8,12 +8,13 @@ namespace BasicsOfForms.Controllers
 {
     public class BasicsController : Controller
     {
-        // GET: Basics
+        // GET: Basics/Index
         public ActionResult Index()
         {
             return View();
         }
 
+        // POST FROM: Basics/Index
         [HttpPost]
         public ActionResult Index(FormCollection form)
         {
@@ -21,10 +22,18 @@ namespace BasicsOfForms.Controllers
             return View();
         }
 
+        //GET: Basics/Razor
         public ActionResult Razor()
         {
             return View();
         }
 
+        //POST FROM: Basics/Razor
+        [HttpPost]
+        public ActionResult Razor(FormCollection form)
+        {
+            int i = 0;
+            return View();
+        }
     }
 }

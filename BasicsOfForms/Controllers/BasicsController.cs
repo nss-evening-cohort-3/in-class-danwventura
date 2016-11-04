@@ -35,5 +35,20 @@ namespace BasicsOfForms.Controllers
             int i = 0;
             return View();
         }
+
+
+        //GET: Basics/Angular
+        public ActionResult Angular()
+        {
+            return View();
+        }
+
+        //POST FROM: Basics/Angular
+        [HttpPost]
+        public ActionResult Angular(dynamic new_post)
+        {
+            int i = 0;
+            return View();
+        }
     }
 }

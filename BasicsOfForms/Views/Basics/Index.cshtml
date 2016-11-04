@@ -3,14 +3,17 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Old School Form</h2>
+<h2>Old School HTML Form</h2>
 
 <div class="row">
     <div class="col-lg-3">
         <form method="post" action="/Basics/Index">
             @Html.AntiForgeryToken()
+            <label>Email:</label>
             <input type="text" name="_email" placeholder="Enter Email Address" />
+            <label>Password:</label>
             <input type="text" name="_password" placeholder="Enter Password" />
+            <label>Re-Enter Password</label>
             <input type="text" name="_passwordConf" placeholder="Confirm Password" />
             <input type="submit" name="_submit" value="SUBMIT" />
         </form>

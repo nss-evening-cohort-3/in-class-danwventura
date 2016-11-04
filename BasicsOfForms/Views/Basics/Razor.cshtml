@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Razor";
+}
+
+<h2>Razor</h2>
+
+@using (Html.BeginForm("Basics", "Razor", FormMethod.Post, new { @class = "col-lg-3", role = "form" }))
+{
+    @Html.AntiForgeryToken()
+
+    @Html.Label("_email", "Email:");
+    @Html.TextBox("email");
+
+    @Html.Label("_password", "Password:");
+    @Html.TextBox("_password");
+
+    @Html.Label("_pwConfirm", "Re-Enter Password:");
+    @Html.TextBox("_pwConfirm");
+
+    <input type="submit" value="SUBMIT"/>
+}
